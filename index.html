@@ -4,16 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi página personal</title>
-    <link rel="shortcut icon" href="assets/img/icono.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="assets/img/icono.ico"> <!-- se carga el icono de la página-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--iconos del css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Conectamos las fuentes-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/estilos.css"> <!-- Conectamos css-->
 </head>
 <body>
     <header>
-        <h1>Hola mundo</h1>
+        <div class="logo">
+            <img src="/assets/img/silent_logo.jpg" alt="logo">
+        </div>
+        <nav>
+            <a href="" class="nav-link">¿Quién soy?</a>
+            <a href="" class="nav-link">Mi experiencia</a>
+            <a href="" class="nav-link">Sobre mí</a>
+        </nav>
     </header>
+    <main>
+        <div class="hero">
+            <div class="texto">
+                <h1>Bienvenido a mi página personal</h1>
+                <p><em>En esta página conocerás un poco más sobre mí, lo que me gusta, mis hobbies<br>mi experiencia entre muchas otras cosas.</em></p>
+                <a href="#"><button>Conóceme</button></a>
+            </div>
+        </div>
+
+        <section class="quien-soy">
+            <div class="texto-quien">
+                <h2 style="color: #faebff;">¿Quién soy?</h2>
+                <hr>
+                <p style="text-align: left;">Mi nombres es <span style="color: #f6d365;">Ken</span>, actualmente tengo 19 años (ya casí cumpliré los 20)<br>y bueno para hablar de mi pues puedo decirles que mis gustos son la música,<br>los videojuegos
+                porque me hacen desconectar de la realidad, al igual que soy muy fan de la programación <em>(más backend que frontend) jejeje.</em></p>
+
+            </div>
+            <div class="yo">
+                <a href="https://www.instagram.com/originalkenoo.o/" target="_blank">
+                <img src="assets/img/yo.jpg" alt="Yo">
+                </a>
+            </div>
+
+
+
+            <div class="contenedor-abajo1"> <!--CONTENEDOR DE Encabezado, Y PARRAFO -->
+                <h2 style="font-size: 32px;">Ahora hablemos sobre mis gustos...</h2> 
+                <hr style="margin: auto; width: 30%; margin-top: 10px;">
+                <p style="margin-top: 15px; font-weight: bold;  line-height: 1.8; max-width: 700px; margin: 15px auto 0;">Para entrar con más detalles sobre lo que me gusta, empecemos, para inciar me gustan las películas de romance y terror, tegno 2 péliculas en estas cartas que les mostraré, y sobre uno de los videojuegos que me han marcado.</p>
+            </div>
+
+
+            <div class="contenedor-abajo2"> <!--CONTENEDOR DE LAS CARDS-->
+                <div class="card">
+                    <img src="assets/img/saw.jpg" alt="Saw">
+                    <h3 style="color: #d72638; font-size: 24px; margin-bottom:10px; margin-top:10px;">La saga de Saw</h3>
+                    <p>Hablando de películas, esta saga es mi favorita si podría decirse que es de "terror", mas que la violencia me gusta su historia, pero eso si, es +18.</p>
+                    <a href="https://www.youtube.com/watch?v=j9tYQUPCM2g" target="_blank">
+                        <button class="boton-card" style="margin-top: 10px;">Ver más</button>
+                    </a>
+                    
+                </div>
+                <div class="card">
+                    <img src="assets/img/silent hill.png" alt="Silent hill">
+                    <h3 style="color: #7f8c8d;; font-size: 24px; margin-bottom:10px; margin-top:10px;">Silent hill</h3>
+                    <p>Ahora uno de mis juegos favoritos de la <strong style="color: black;">vida</strong> Silent hill 2, este juego para mi es el mejor videojuego de terror ya que la historia es muy profunda y su terror psicológico hace que de mas miedo que cualquier otra cosa de terror.</p>
+                    <a href="https://youtu.be/9R2g3jf2Zu8?si=j5GHfmIsYmONdCWt" target="_blank">
+                        <button class="boton-card" style="margin-top: 10px;">Ver más</button>
+                    </a>
+                </div>
+                <div class="card">
+                    <img src="assets/img/la la land.jpg" alt="La la land">
+                    <h3 style="color: rgb(233, 236, 50); font-size: 24px; margin-bottom:10px; margin-top:10px;">La la land</h3>
+                    <p>Y de nuevo hablando de películas , esta vez hablamos de <em>La la land</em> que como pueden ver es la inspiración para esta página.</p>
+                    <a href="https://youtu.be/_8w9rOpV3gc?si=Z7lZQYyttR7IZUeC" target="_blank">
+
+                        <button class="boton-card" style="margin-top:10px;">Ver más</button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="contendor-abajo3"> <!--CONTENEDOR CON 2 CONTENEDORES HIJOS UNO IZQUIERDA Y OTRO DERECHA-->
+                <div class="contenedor-izquierdo">
+
+                </div>
+                <div class="contenedor-derecho">
+                    
+                </div>
+            </div> 
+
+        </section>
+
+        <section class="hobbies">
+            <h2>Mis hobbies</h2>
+            <p>Me gusta programar, leer y ver cine.</p>
+        </section> 
+ 
+
+    </main>
 </body>
 </html>
