@@ -1,0 +1,79 @@
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 20px;
+}
+
+.cv {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border: 2px solid #4CAF50;
+}
+
+/* Encabezado */
+.encabezado {
+  display: flex;
+  align-items: center;
+  background: #e9e9e9;
+  padding: 15px;
+}
+
+.foto {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #4CAF50;
+}
+
+.info h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.info p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.info ul li {
+  margin-bottom: 5px;
+}
+
+
+.cuerpo {
+  display: flex;
+  margin-top: 20px;
+}
+
+.columna {
+  flex: 1;
+  padding: 10px;
+}
+
+.columna h2 {
+  font-size: 18px;
+  color: #4CAF50;
+  margin-bottom: 8px;
+}
+
+.columna h3 {
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.columna p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
