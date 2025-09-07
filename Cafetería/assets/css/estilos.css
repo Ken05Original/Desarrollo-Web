@@ -146,61 +146,88 @@ nav ul li a:hover{
 
 
 .secciones-principales {
-    width: 90%;            
-    margin: 2em auto;      
+    width: 90%;
+    margin: 2em auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;             
+    gap: 2rem;
 }
-
 
 .seccion {
-    background-color: floralwhite;
-    padding: 1.5rem 2rem;
-    border-radius: 15px;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    background-color: #fffaf0; 
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.seccion:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 20px;
+}
 
 .seccion h2 {
     margin-top: 0;
     margin-bottom: 1rem;
     color: #732709;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
-
 
 .seccion p {
-    margin: 0;
-    color: #333;
-    line-height: 1.5;
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    color: #4d2c19;
+}
+
+.nosotros {
+    max-width: 900px; 
+    margin: 0 auto;  
+}
+
+.nosotros-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; 
+}
+
+.imagen-nosotros img {
+    width: 300px; 
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.texto-nosotros {
+    flex: 1;
 }
 
 
-.seccion:hover {
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 20px, rgba(17, 17, 26, 0.1) 0px 8px 40px;
-    transform: translateY(-2px);
-    transition: 0.3s ease;
-}
 
-#contacto {
-    width: 48%;
+
+.contacto i {
+    margin-right: 0.5rem;
+    color: #732709;
 }
 
 
-
-@media (min-width: 900px) {
+@media (max-width: 768px) {
     .secciones-principales {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        width: 95%;
     }
+
     .seccion {
-        width: 48%; 
+        padding: 1.5rem;
     }
-    #contacto {
-        width: 100%; 
+
+    .nosotros-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .imagen-nosotros img {
+        width: 100%;
+        max-width: 300px;
     }
 }
+
