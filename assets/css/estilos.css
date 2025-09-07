@@ -11,6 +11,11 @@ body {
   margin: 0;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   display: flex;
   flex-direction: column;
@@ -58,7 +63,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(137, 72, 202);
+  color: #ffcc00;
   cursor: pointer;
 }
 
@@ -86,6 +91,8 @@ hr {
 
   background-color: #f6d365;
 }
+
+
 
 
 button {
@@ -362,8 +369,128 @@ header {
   object-fit: cover;
   margin-bottom: 1rem;
 }
-.hobbies {
+
+
+
+.experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
   background: linear-gradient(to bottom, #663399, #f6d365);
-  padding: 2rems;
+  padding: 2rem 3rem;
+
+}
+
+.contenedor-izquierda-experiencia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:2rem;
+  flex: 1 1 45%;
+  padding: 2rem;
+}
+
+
+
+.contenedor-mi-experiencia {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.014); 
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border-radius: 15px;
+   
+  padding: 2rem;
+  transition: transform 0.3s;
+}
+
+.contenedor-mi-experiencia:hover {
+  transform: translateY(-5px)
+}
+
+.contenedor-mi-perspectiva {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.014); 
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: transform 0.3s;
+}
+
+.contenedor-mi-perspectiva:hover {
+  transform: translateY(-5px)
+}
+
+
+
+
+.contenedor-derecha-experiencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap:1rem;
+  background: rgba(255, 255, 255, 0.014); 
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  flex: 1 1 45%; 
+  padding: 2rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.contenedor-derecha-experiencia img {
+  border-radius: 15px;
+  width: 100%;
+  max-width:30rem;
+}
+
+
+.practicas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap:1rem;
+  background: linear-gradient(to bottom, #f6d365, #9669ff);
+
+  padding: 2rem 5rem;
+  
+}
+
+.practicas-encabezado {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.014); 
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: transform 0.3s;
+  width: auto;
+}
+
+.practicas-botones {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.014); 
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: transform 0.3s;
+  width: auto;
 }
 
